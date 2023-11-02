@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Bounce Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+            background-color: whitesmoke; 
+            background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        canvas {
+            border: 8px double whitesmoke; 
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.8); 
+            border-radius: 10px; 
+            background-color: rgb(0, 0, 0);
+            opacity: 0.7;
+            margin: 2px;
+        }
+
+        button {
+         
+            font-size: 22px; 
+            background-color: #9b0d64; 
+            color: #140a0a; 
+           
+           
+            border-radius: 15px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease-in-out;
+        }
+
+  
+        h2{
+            font-size: 1rem;
+            text-align: center;
+          
+        }
+        .box1{
+            display: flex;
+            justify-content: center;align-items: center;
+            text-align: center;
+            font-size: 50px;
+        }
+        .box2{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            height: max-content;
+            
+        }
+        button{
+            width: 100px;
+            height: 60px;
+            align-items: center;justify-content: center;
+            display: block;
+            margin-left: 660px;
+            opacity: 0.9;
+          padding: 2px;
+    
+         
+        }
+        button:hover{
+            background-color: rgb(80, 0, 185);
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <h2>BOUNCE ME</h2>
+        </div>
+        <div class="box2">
+          
+            <canvas id="gameCanvas" width="1400" height="600">
+                
+            </canvas>
+            <button id="resetButton"><h2>Reset</h2></button>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
